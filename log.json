@@ -1,11 +1,11 @@
 {
     "lastVersion": "v1.1.0",
-    "lastVersionCode": 0,
-    "filePath": "app-Relase-V1.1.0-1021223803.apk",
+    "lastVersionCode": 2,
+    "filePath": "app-Relase-V1.1.0-1021235406.apk",
     "updateLog": {
         "v1.1.0": {
             "version": "v1.1.0",
-            "time": "2021-10-21 22:35",
+            "time": "2021-10-21 23:54",
             "msg": [
                 "1. 纪念日详情页面优化",
                 "2. 修复 WebDav 同步时候 HttpClient 异常问题"
