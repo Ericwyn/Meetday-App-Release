@@ -186,30 +186,15 @@
 
     let versionJson = null
 
-    function getLastVersion(){
-        ajax_get(
-            "/version.json",
-            [],
-            function(res){
-                let json = JSON.parse(res)
-                document.getElementById("version").innerHTML = "最新版本:" + json.version
-                domId("btn").removeAttribute("disabled");
-                versionJson = json;
-            },
-            function(err){
-
-            }
-        )
-    }
-
     function getUpdateLog(){
         ajax_get(
-            "/log.json",
+            "log.json",
             [],
             function(res){
                 let logJson = JSON.parse(res)
 
                 versionJson = logJson;
+                domId("btn").removeAttribute("disabled");
 
                 console.log("最新版本:" + logJson.lastVersion)
                 let lastVersionLog = logJson.updateLog[logJson.lastVersion];
@@ -245,7 +230,6 @@
         }
     }
 
-    getLastVersion()
     getUpdateLog()
     
 </script>
